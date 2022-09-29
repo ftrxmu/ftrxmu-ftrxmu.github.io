@@ -1,0 +1,125 @@
+@font-face{
+  font-family: 'rafi';
+  src: url("mandalore.ttf");
+}
+@font-face{
+  font-family: 'mu';
+  src: url("Prototype.ttf");
+}
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'mu';
+}
+html{
+  margin: auto;
+  max-width: 1440px;
+  font-size: 10px;
+  background-color:#E0D8B0;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #E6B325;
+  border-radius: 10px;
+}
+ /*nav*/
+ nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 245px;
+  color: #D2001A;
+  border-bottom: 1px solid #e6e9ec;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+  
+nav .nav-brand {
+  font-size: 4.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-items: center;
+  font-family: 'rafi';
+}
+nav .nav-brand span{
+  color:black;
+  font-family: 'rafi';
+}
+nav .nav-section {
+  display: flex;
+  align-items: center;
+}
+nav .nav-section ul {
+  list-style: none;
+}
+  
+nav .nav-section ul li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+  
+nav .nav-section ul li a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s;
+}
+nav .nav-brand2:hover,
+nav .nav-section2:hover {
+  color: #407bff;
+  transition: 0.3s;
+}
+  /*akir nav*/
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 00px;
+}
+.card{
+  height: 365px;
+  width: 355px;
+  padding: 20px 35px;
+  background: #D8CCA3;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid black;
+
+}
+.card i{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0;
+  color: black;
+}
+.card h5{
+  color: black;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+div.pra p a{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+}
+.pra p a :hover {
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}

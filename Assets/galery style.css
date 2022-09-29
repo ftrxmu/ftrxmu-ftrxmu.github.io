@@ -1,0 +1,164 @@
+@font-face{
+    font-family: 'rafi';
+    src: url("mandalore.ttf");
+  }
+  @font-face{
+    font-family: 'mu';
+    src: url("Prototype.ttf");
+  }
+  * {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'mu';
+    background-color: #E0D8B0;
+  }
+  
+  html {
+    margin: auto;
+    max-width: 1440px;
+    font-size: 15px;
+  }
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E6B325;
+    border-radius: 10px;
+  }
+  /*nav*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 14rem;
+    color: #D2001A;
+    border-bottom: 1px solid #e6e9ec;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  nav .nav-brand {
+    font-size: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-items: center;
+    font-family: 'rafi';
+  }
+  nav .nav-brand span{
+    color: rgb(0, 0, 0);
+    font-family: 'rafi';
+  }
+  nav .nav-section {
+    display: flex;
+    align-items: center;
+  }
+  nav .nav-section ul {
+    list-style: none;
+  }
+  
+  nav .nav-section ul li {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  
+  nav .nav-section ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+  }
+  nav .nav-brand:hover,
+  nav .nav-section:hover {
+    color: #407bff;
+  }
+  header .bag-satu {
+    flex-basis: 50%;
+    padding: 11%;
+  }
+  header .bag-satu .text-hello {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  header .bag-satu p {
+    font-size: 1.5rem;
+  }
+  header .bag-dua {
+    flex-basis: 50%;
+    margin-top: 2%;
+    margin-right: 10%;
+  }
+  
+  img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+  h1 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin: 100px;
+  }
+  
+  
+  /* hover styles */
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(122, 89, 93, 0.4);
+    color: white;
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
+  
+  
